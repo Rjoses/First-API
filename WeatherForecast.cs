@@ -1,15 +1,30 @@
-using System;
+
+using System.Collections.Generic;
 
 namespace WEBAPI_ASP.NET_CORE
 {
-    public class WeatherForecast
+    public class Candidate
     {
-        public DateTime Date { get; set; }
+        public string Id { get; set; }
 
-        public int TemperatureC { get; set; }
+        public string Name { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public string Email { get; set; }
 
-        public string Summary { get; set; }
+        public string Phone { get; set; }
+
+        public string LinkedinProfile { get; set; }
+
+        public IList<string>? Skills { get; set; }
+
+        public IList<string>? Languages { get; set; }
+
+        public IList<string>? Experiences { get; set; }
+
+        public IList<string>? CompanyDeny { get; set; }
+
+        public IList<string>? JobsDeny { get; set; }
+
     }
-}
+   
+} 
